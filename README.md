@@ -28,7 +28,7 @@ At the time compiled version seems to be working only in Chrome.
 - Database access through Akka actors (proof-of-concept);
 - Specs2 PlayFramework and Akka testing;
 
-### Frontend (Dart, angular.dart)
+### Frontend (Dart, angular.dart):
 
 - Cornerstone angular directives: ng-model, ng-repeat, ng-click, ng-if, etc.;
 - Routing;
@@ -45,6 +45,7 @@ At the time compiled version seems to be working only in Chrome.
 
 - Integrate Travis-CI (including Karma for frontend tests)
 and [new scala code coverage tool](https://github.com/scoverage/scalac-scoverage-plugin);
+- Write explanatory comment throughout the code;
 - Investigate possibility of making compiled-to-js frontend work in Firefox and not only Chrome;
 - Implement proper validation and error handling;
 - Add proper `MirrorsUsed` annotation(s);
