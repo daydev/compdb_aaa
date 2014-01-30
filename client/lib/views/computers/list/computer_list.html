@@ -1,0 +1,49 @@
+<div computer-list class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <compdb-search-input query="ctrl.filter.name"></compdb-search-input>
+        </div>
+        <div class="col-sm-5">
+            <h4>{{ctrl.paginator.itemsTotal}} computers found</h4>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2">
+            <a href="#/computers/new" class="btn btn-success btn-block">Add computer</a>
+        </div>
+    </div>
+
+    <compdb-pager paginator="ctrl.paginator"></compdb-pager>
+
+    <table class="table table-bordered table-condensed table-striped">
+        <tr>
+            <th>
+                <compdb-ordering-header ordering="ctrl.ord" column="'name'">
+                    Computer name
+                </compdb-ordering-header>
+            </th>
+            <th>
+                <compdb-ordering-header ordering="ctrl.ord" column="'introduced'">
+                    Introduced
+                </compdb-ordering-header>
+            </th>
+            <th>
+                <compdb-ordering-header ordering="ctrl.ord" column="'discontinued'">
+                    Discontinued
+                </compdb-ordering-header>
+            </th>
+            <th>
+                <compdb-ordering-header ordering="ctrl.ord" column="'company'">
+                    Company
+                </compdb-ordering-header>
+            </th>
+        </tr>
+        <tr ng-repeat="computer in ctrl.computers | filter:ctrl.filter | orderBy:ctrl.ord.ordValue:ctrl.ord.isDesc | pagination:ctrl.paginator">
+            <td style="width: 40%;"><a href="#/computers/{{computer.id}}">{{computer.name}}</a></td>
+            <td style="width: 15%;">{{computer.introduced | date}}</td>
+            <td style="width: 15%;">{{computer.discontinued | date}}</td>
+            <td style="width: 30%;">{{ctrl.companyName(computer)}}</td>
+        </tr>
+    </table>
+
+    <compdb-pager paginator="ctrl.paginator"></compdb-pager>
+
+</div>

@@ -1,0 +1,42 @@
+div.container {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+div.pager {
+    position: absolute;
+    right: 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+
+div.size-select {
+    position: absolute;
+    left: 0;
+}
+
+span {
+    padding: 0 6px;
+}
+
+span.prev {
+    border-right: 1px solid gray;
+}
+
+span.next {
+    border-left: 1px solid gray;
+}
+
+span.link {
+    cursor: pointer;
+    color: #428BCA;
+}
+
+span.passive {
+    color: black;
+    cursor: default;
+}
+

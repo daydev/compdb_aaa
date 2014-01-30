@@ -1,0 +1,12 @@
+name: compdb
+description: Play Framework example application Computer Database with Async, Akka, Angular.Dart
+dependencies:
+  angular: any
+  angular_convert: any
+  angular_pagination: any
+  browser: any
+  morph: any
+  shadow_dom: any
+dev_dependencies:
+  scheduled_test: any
+  unittest: any

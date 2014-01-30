@@ -1,0 +1,22 @@
+div {
+    position: relative;
+    cursor: pointer;
+}
+
+div:after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    border-color: black rgba(0, 0, 0, 0);
+    border-width: 4px;
+    opacity: 0.6;
+}
+
+.sorting-asc:after {
+    border-style: solid solid none solid;
+}
+
+.sorting-desc:after {
+    border-style: none solid solid solid;
+}

@@ -1,0 +1,17 @@
+.main-container {
+    position: relative;
+    padding: 5em 2em;
+}
+
+.header-title {
+    padding: 0 1.1em;
+    font-size: 20px;
+}
+
+.header-title a {
+    color: lightgray;
+}
+
+.ng-invalid {
+    border-color: orangered;
+}

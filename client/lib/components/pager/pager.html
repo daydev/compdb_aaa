@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="size-select">
+        <span>Items per page: </span>
+        <select ng-model="m.paginator.pageSize" ngx-conv-num>
+            <option ng-repeat="size in m.pageSizes" value="{{size}}">{{size}}</option>
+            <option value="{{m.paginator.itemsTotal}}">All</option>
+        </select>
+    </div>
+    <div class="pager">
+        <span class="prev link" ng-click="m.paginator.goPrev()" ng-class="{'passive': m.paginator.isFirstPage}">
+            Prev
+        </span>
+        <span class="info">
+            &nbsp;
+            Page {{m.paginator.pageNum}} ({{m.paginator.currentFirst}}&mdash;{{m.paginator.currentLast}} of {{m.paginator.itemsTotal}})
+            &nbsp;
+        </span>
+        <span class="next link" ng-click="m.paginator.goNext()" ng-class="{'passive': m.paginator.isLastPage}">
+            Next
+        </span>
+    </div>
+</div>
