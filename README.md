@@ -45,7 +45,7 @@ At the time compiled version seems to be working only in Chrome.
 
 - Integrate Travis-CI (including Karma for frontend tests)
 and [new scala code coverage tool](https://github.com/scoverage/scalac-scoverage-plugin);
-- Write explanatory comment throughout the code;
+- Write explanatory comments throughout the code;
 - Investigate possibility of making compiled-to-js frontend work in Firefox and not only Chrome;
 - Implement proper validation and error handling;
 - Add proper `MirrorsUsed` annotation(s);
@@ -61,3 +61,4 @@ Sources of information/inspiration, excluding obvious ones (official documentati
 - [Discussion about accessing database through Akka actors](https://groups.google.com/d/msg/akka-user/_t1ER27Df78/agxSpdtg2IsJ);
 - [angular.dart sample app](https://github.com/vsavkin/angulardart-sample-app);
 - [angular.dart tutorial](https://github.com/angular/angular.dart.tutorial);
+- [Testing angular.dart with semi-standard Dart unittests](http://japhr.blogspot.com/2013/10/beautiful-acceptance-tests-in.html)
