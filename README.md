@@ -11,7 +11,7 @@ git clone https://github.com/daydev/compdb_aaa.git
 cd compdb_aaa
 play run
 ```
-Open [Dartium](https://www.dartlang.org/tools/dartium/) and go to [http//localhost:9000](http//localhost:9000).
+Open [Dartium](https://www.dartlang.org/tools/dartium/) and go to [http://localhost:9000](http//localhost:9000).
 
 If you want to run compiled-to-js version, before `play run` additionally do
 ```
@@ -26,7 +26,7 @@ git clone https://github.com/daydev/compdb_aaa.git
 cd compdb_aaa/client
 pub serve
 ```
-Open [Dartium](https://www.dartlang.org/tools/dartium/) and go to [http//localhost:8080/standalone/index.html](http//localhost:8080/standalone/index.html).
+Open [Dartium](https://www.dartlang.org/tools/dartium/) and go to [http://localhost:8080/standalone/index.html](http//localhost:8080/standalone/index.html).
 
 pub will automatically serve compliled-to-js version, so if you want to see it, just go to the same address in Chrome.
 Again, at the time compiled version seems to be working only in Chrome.
