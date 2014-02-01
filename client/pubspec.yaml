@@ -5,6 +5,7 @@ dependencies:
   angular_convert: any
   angular_pagination: any
   browser: any
+  logging: any
   morph: any
   shadow_dom: any
 dev_dependencies:

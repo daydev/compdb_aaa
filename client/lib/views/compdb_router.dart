@@ -14,8 +14,9 @@ class CompdbRouter implements RouteInitializer {
       ..addRoute(
         name: 'default_redirect',
         defaultRoute: true,
-        enter: (_) =>
-        router.go('computer_list', new Map(), replace: true));
+        enter: (_) {
+          router.go('computer_list', new Map(), replace: true);
+        });
   }
 
 }

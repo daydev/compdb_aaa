@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Computer Database AAA Standalone</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/compdb.css"
+    "/>
+</head>
+<body ng-app>
+<header class="page-header">
+    <h3 class="header-title">
+        <a href="/">Computer Database application</a>
+    </h3>
+</header>
+<section>
+    <div class="container" storage-reset>
+        <div class="row alert alert-info">
+            <div class="col-lg-8">
+                This is standalone version of the application that uses <a href="http://www.w3.org/TR/IndexedDB/">IndexedDB</a>
+                instead of backend. <br/>
+                If you think there's something wrong with the data you see, try resetting.
+            </div>
+            <div class="col-lg-4">
+                <button class="btn btn-warning btn-block" ng-click="ctrl.reset()">
+                    Reset storage now
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <ng-view></ng-view>
+</section>
+
+
+<script type="application/dart" src="/standalone/main.dart"></script>
+<script src="/packages/browser/dart.js"></script>
+<script src="/packages/shadow_dom/shadow_dom.min.js"></script>
+</body>
+</html>
